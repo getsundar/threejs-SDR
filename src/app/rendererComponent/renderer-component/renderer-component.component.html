@@ -1,8 +1,10 @@
-<div #rendererContainer></div>
-<div style="display: flex;float: right;">
-  <button (click)="onMark()">Mark</button>
-  <button (click)="onMaterial()">Material</button>
-  <button (click)="onWireframe()">Wireframe</button>
-  <button (click)="onTransperant()">Transperant</button>
+<div style="display:grid;">
+  <div #rendererContainer></div>
+  <div style="display: flex;">
+    <button style="width: 100px;height: 30px;" (click)="onMark()">Mark</button>
+    <button style="width: 100px;height: 30px;"(click)="onMaterial()">Material</button>
+    <button style="width: 100px;height: 30px;"(click)="onWireframe()">Wireframe</button>
+    <button style="width: 100px;height: 30px;" (click)="onTransperant()">Transperant</button>
+  </div>
 </div>
-<canvas id="number" width="64" height="64"></canvas>
+<canvas id="number" width="64" height="64" style="display:none"></canvas>
